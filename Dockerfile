@@ -1,8 +1,8 @@
 FROM node:18-alpine
 
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /usr/src/socket/app
+WORKDIR /usr/src/socket/app
 
 COPY package*.json ./
 RUN npm install
